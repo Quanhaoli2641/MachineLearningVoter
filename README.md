@@ -8,9 +8,9 @@ The supervised algorithms were designed **specifically** for the parsing of the 
 Because there were 9 different attributes and 1 label in the data, the data was simply parsed into different variables.
 
 ## Table of Contents
-* [Explanation of Algorithms](explanation_of_algorithms)
+* [Explanation of Algorithms](explanation)
 
-## Explanation of Algorithms
+## Explanation
 
 ### Supervised Learning
 
