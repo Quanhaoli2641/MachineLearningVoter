@@ -7,6 +7,9 @@ The 2 Unsupervised algorithms include K-Means and Agglomerative Clustering (AGNE
 The supervised algorithms were designed **specifically** for the parsing of the voter training data. 
 Because there were 9 different attributes and 1 label in the data, the data was simply parsed into different variables.
 
+## Table of Contents
+* [Explanation of Algorithms](explanation of algorithms)
+
 ## Explanation of Algorithms
 
 ### Supervised Learning
@@ -53,4 +56,6 @@ The implementation for the algorithm is as follows:
   * The most common vote of the smaller dataset produced by the tree is the predicted vote of the input county data
   
 The ID3 algorithm produced an accuracy rating of *86.59%*
+
+### Unsupervised Learning
 
