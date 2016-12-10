@@ -14,6 +14,8 @@ Because there were 9 different attributes and 1 label in the data, the data was 
   * [Perceptron](#perceptron)
   * [Decision Tree (ID3)](#id3)
  * [Unsupervised Learning](#unsupervised-learning)
+  
+ 
 
 ##Explanation
 
