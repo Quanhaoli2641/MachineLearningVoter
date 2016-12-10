@@ -10,7 +10,7 @@ Because there were 9 different attributes and 1 label in the data, the data was 
 ## Table of Contents
 * [Explanation of Algorithms](##Explanation-of-Algorithms)
 
-## Explanation of Algorithms
+## Explanation-of-Algorithms
 
 ### Supervised Learning
 
