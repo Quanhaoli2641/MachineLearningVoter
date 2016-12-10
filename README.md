@@ -8,13 +8,13 @@ The supervised algorithms were designed **specifically** for the parsing of the 
 Because there were 9 different attributes and 1 label in the data, the data was simply parsed into different variables.
 
 ## Table of Contents
-* [Explanation of Algorithms](## Explanation)
+* [Explanation of Algorithms](##Explanation)
 
-## Explanation
+##Explanation
 
-### Supervised Learning
+###Supervised Learning
 
-#### K - Nearest Neighbor (KNN)
+####K - Nearest Neighbor (KNN)
 
 The implementation is as follows:
   * The Euclidean distance between a county's data (testing set) and every other county's data (training set) was found
@@ -23,7 +23,7 @@ The implementation is as follows:
   
 The KNN algorithm produced an accuracy rating of *87.96%*
   
-#### Perceptron
+####Perceptron
 
 The implementation is as follows:
   * The label value that the Perceptron will produce should be 0 or 1
@@ -37,7 +37,7 @@ The implementation is as follows:
   
 The Perceptron algorithm produced an accuracy rating of *86.55%*
 
-#### Decision Tree (ID3)
+####Decision Tree (ID3)
 
 For this algorithm, a specific class called **Node** was made to help build the tree.
 The **Node** class held the following information:
@@ -57,5 +57,5 @@ The implementation for the algorithm is as follows:
   
 The ID3 algorithm produced an accuracy rating of *86.59%*
 
-### Unsupervised Learning
+###Unsupervised Learning
 
