@@ -16,7 +16,7 @@ Because there were 9 different attributes and 1 label in the data, the data was 
  * [Unsupervised Learning](#unsupervised-learning)
     * [K Means](#kmeans)
     * [Agglomerative Nesting (AGNES)](#agnes)
-    
+ * [Additional Information](#additional)
 ##Explanation
 
 ###Supervised-Learning
@@ -66,7 +66,7 @@ The ID3 algorithm produced an accuracy rating of *86.59%*
 
 ###Unsupervised-Learning
 
-Since unsupervised learning algorithms do not "predict" anything, the silhouette value for the clusterings are used instead to determine the effectiveness of these algorithms
+Since unsupervised learning algorithms do not "predict" anything, the silhouette coefficient for the clusterings are used instead to determine the effectiveness of these algorithms. A separate class was made to do this calculation.
 
 ####KMeans
 
@@ -79,7 +79,7 @@ The implementation for the algorithm is as follows:
    * And the entire process starts again until no more new centers are made
    * And voila, the clusters are made
    
-The Silhouette value for the first cluster was *0.9987* and the Silhouette value for the second cluster was *0.9997*
+The Silhouette coefficient for the first cluster was *0.9987* and the Silhouette coefficient for the second cluster was *0.9997*
 
 ####AGNES
    
@@ -94,4 +94,9 @@ The implementation for this algorithm is as follows:
    * Do this recursively until there is only one cluster left
    * By the magic of recursion, the Agglomerative Nesting Cluster is made
 
-Since there is only cluster, the silhouette value is *0*.
+Since there is only cluster, the silhouette coefficient is *0*.
+
+
+##Additional
+
+Outide of the algorithms and classes already described above, there is one additional class made to help with the supervised learning algorithms. In order to keep track of each county, a Data class was made that held each attribute and label for every county. A main class is also included to test each algorithm. Note that the data sets are very skewed in their data since the majority of the votes were Republican, and thus, may have also skewed the results and the accuracy.
