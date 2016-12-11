@@ -14,9 +14,9 @@ Because there were 9 different attributes and 1 label in the data, the data was 
     * [Perceptron](#perceptron)
     * [Decision Tree (ID3)](#id3)
  * [Unsupervised Learning](#unsupervised-learning)
-  
- 
-
+    * [K Means](#kmeans)
+    * [Agglomerative Nesting (AGNES)](#agnes)
+    
 ##Explanation
 
 ###Supervised-Learning
@@ -50,7 +50,7 @@ For this algorithm, a specific class called **Node** was made to help build the 
 The **Node** class held the following information:
   * It's children
   * It's attribute
-  * It's minimum bin size, ir appropriate
+  * It's minimum bin size, if appropriate
 
 The implementation for the algorithm is as follows:
   * Given a training set, the attribute with the best Gain or the lowest entropy was chosen
@@ -66,3 +66,20 @@ The ID3 algorithm produced an accuracy rating of *86.59%*
 
 ###Unsupervised-Learning
 
+Since unsupervised learning algorithms do not "predict" anything, the silhouette value for the clusterings are used instead to determine the effectiveness of these algorithms
+
+####KMeans
+
+The implementation for the algorithm is as follows:
+   * The information was initially taken from the information set and parsed into a data structure
+   * Since there were only two labels, only 2 clusters were made
+   * The centers of these clusters were initalized as random county data values
+   * Every county data was then split between these two centers based on the Euclidean distance between itself and the clusters
+   * The centers were realligned based on the new clusters
+   * And the entire process starts again until no more new centers are made
+   * And voila, the clusters are made
+   
+The Silhouette value for the first cluster was *99.87%* and the Silhouette value for the second cluster was *99.97%*
+
+####AGNES
+   
