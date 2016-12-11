@@ -79,7 +79,19 @@ The implementation for the algorithm is as follows:
    * And the entire process starts again until no more new centers are made
    * And voila, the clusters are made
    
-The Silhouette value for the first cluster was *99.87%* and the Silhouette value for the second cluster was *99.97%*
+The Silhouette value for the first cluster was *0.9987* and the Silhouette value for the second cluster was *0.9997*
 
 ####AGNES
    
+For this algorithm, a specific class called **Unsupervised Node** was made to help build the tree.
+The **Unsupervised Node** class held the following information:
+   * It's children
+   * It's own smaller dataset, if appropriate
+
+The implementation for this algorithm is as follows:
+   * Initialize all data entries in the data set as individual clusters
+   * Find the two closest clusters using Euclidean distance and combine the clusters into one cluster
+   * Do this recursively until there is only one cluster left
+   * By the magic of recursion, the Agglomerative Nesting Cluster is made
+
+Since there is only cluster, the silhouette value is *0*.
