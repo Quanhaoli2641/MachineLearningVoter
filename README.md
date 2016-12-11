@@ -100,4 +100,4 @@ Since there is only cluster, the silhouette coefficient is *0*.
 
 ##Additional
 
-Outide of the algorithms and classes already described above, there is one additional class made to help with the supervised learning algorithms. In order to keep track of each county, a Data class was made that held each attribute and label for every county. A main class is also included to test each algorithm. Note that the data sets are very skewed in their data since the majority of the votes were Republican, and thus, may have also skewed the results and the accuracy.
+   Outide of the algorithms and classes already described above, there is one additional class made to help with the supervised learning algorithms. In order to keep track of each county, a Data class was made that held each attribute and label for every county. A main class is also included to test each algorithm. Note that the data sets are very skewed in their data since the majority of the votes were Republican, and thus, may have also skewed the results and the accuracy.
